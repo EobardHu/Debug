@@ -7,3 +7,18 @@ Ubuntu20(adoptive)
 2.Step2 if you meet some error about "test_pc2_conversion" related to "could not find xx lib/so"
   ->locate xxlib
   ->sudo cp xxlib /lib/
+3.Step3 about the path
+  cd <path-to-your-catkin-workspace>/src                         
+  #ln -s <path-to-ct_icp-git-project>/ros/catkin_ws/ct_icp_odometry ct_icp_odometry        
+  #ln -s <path-to-ct_icp-git-project>/ros/catkin_ws/slam_roscore slam_roscore 
+  ln -s /home/e/E/ct_icp/ros/catkin_ws/ct_icp_odometry ct_icp_odometry
+  ln -s /home/e/E/ct_icp/ros/catkin_ws/slam_roscore slam_roscore
+  cd .. 
+  #catkin_make -DSUPERBUILD_INSTALL_DIR=<path-to-superbuild-install-dir>
+  catkin_make -DSUPERBUILD_INSTALL_DIR=/home/e/E/ct_icp/install #end with no "/" !!!!
+
+4.Step3 could not find Eigen3::eigen  
+  /home/e/E/ct_icp/install/superbuild_import.cmake line2:
+
+5.catkin_make 可能不成功，多source几遍
+roslaunch ct_icp_odometry urban_loco_CAL.launch rosbag:=/home/e/CA-20190828184706_blur_align-001.bag
