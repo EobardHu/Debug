@@ -22,3 +22,15 @@ Ubuntu20(adoptive)
 
 5.catkin_make 可能不成功，多source几遍
 roslaunch ct_icp_odometry urban_loco_CAL.launch rosbag:=/home/e/CA-20190828184706_blur_align-001.bag
+
+ubuntu 录屏
+一、开始录屏
+使用快捷键Ctrl + Shift + Alt + R，开始录制屏幕
+二、结束录屏
+再次使用快捷键Ctrl + Shift + Alt + R，结束录制屏幕
+默认录屏时间为30秒，超时会自动结束，可在终端输入下面命令，修改为无限制录屏
+gsettings set org.gnome.settings-daemon.plugins.media-keys max-screencast-length 0
+三、查看录像
+在~/视频中可以查看我们录制的视频。
+视频文件的名称和格式为：
+2023年07月01日 屏幕视频 14时08分55秒.webm
