@@ -4,3 +4,6 @@ Ubuntu18(official)
 Ubuntu20(adoptive)
 
 1.cmake: update to 3.20.0
+2.Step2 if you meet some error about "test_pc2_conversion" related to "could not find xx lib/so"
+  ->locate xxlib
+  ->sudo cp xxlib /lib/
