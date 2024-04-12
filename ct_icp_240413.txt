@@ -1,0 +1,6 @@
+https://github.com/pierdell/gifs/blob/master/ct_icp
+Platform: 
+Ubuntu18(official)
+Ubuntu20(adoptive)
+
+1.cmake: update to 3.20.0
